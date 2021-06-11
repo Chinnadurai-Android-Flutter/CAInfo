@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textSize="18sp"
+            android:maxLines="2"
+            android:layout_weight="1.5"
+            android:background="@drawable/button_background"
+            android:id="@+id/addressTextView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:id="@+id/locationSearch"
+            android:layout_width="0dp"
+            android:text="search"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="0.5"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/selectAddresssTextView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/submit"
+        android:background="@android:color/holo_green_light"
+        android:textSize="15sp"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+</LinearLayout>

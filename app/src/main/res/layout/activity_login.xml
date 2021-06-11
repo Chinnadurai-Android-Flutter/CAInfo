@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.profile.ui.LoginActivity">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:padding="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:gravity="center"
+            android:textSize="50sp"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"/>
+        <EditText
+            android:layout_marginTop="30dp"
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:importantForAutofill="no"
+            android:inputType="text" />
+
+        <EditText
+            android:inputType="textPassword"
+            android:layout_marginTop="35dp"
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:ignore="Autofill" />
+        <TextView
+            android:id="@+id/loginButton"
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/login_button_background"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+        <Button
+            android:id="@+id/regButton"
+            android:layout_width="wrap_content"
+            android:text="Register"
+            android:background="@drawable/button_background"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>
